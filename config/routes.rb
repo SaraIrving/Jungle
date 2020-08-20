@@ -20,14 +20,6 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#show'
 
-  # # This route sends requests to our naked url to the *cool* action in the *gif* controller.
-  # root to: 'gif#cool'
-    
-  # # I've created a gif controller so I have a page I can secure later. 
-  # # This is optional (as is the root to: above).
-  # get '/cool' => 'gif#cool'
-  # get '/sweet' => 'gif#sweet'
-
   # these routes are for showing users a login form, logging them in, and logging them out.
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
