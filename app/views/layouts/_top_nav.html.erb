@@ -33,7 +33,9 @@
         
           <% if current_user %>
             <li>
-              Signed in as <%= current_user.name %>
+              <p>
+                Signed in as <%= current_user.name %>
+              </p>
             </li>
             <li>
               <%= link_to "Logout", '/logout' %>
