@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   def self.authenticate_with_credentials(email_address, password)
 
     # see if there is a user in the database with the given email
-    user = User.find_by_email(email_address.strip)
+    user = User.find_by_email(email_address.strip.downcase)
 
     # If the user exists AND the password provided is correct then return and instance of that user, if not return nil
 
