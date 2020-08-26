@@ -25,3 +25,18 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+
+## Screenshots
+
+### Jungle Products Page
+!["Products"](https://raw.githubusercontent.com/SaraIrving/Jungle/master/public/photos/screenshots/products_page.png)
+
+### Category Page
+!["Apparel Category"](https://raw.githubusercontent.com/SaraIrving/Jungle/master/public/photos/screenshots/category_page.png)
+
+### Nav Bar Updates When A User Is Signed In And When They Add Items To Their Cart
+!["Updated Nav Bar"](https://raw.githubusercontent.com/SaraIrving/Jungle/master/public/photos/screenshots/respoponsive_nav_bar.png)
+
+### Cart Shows Order Details
+!["Cart With One Item"](https://raw.githubusercontent.com/SaraIrving/Jungle/master/public/photos/screenshots/cart.png)
