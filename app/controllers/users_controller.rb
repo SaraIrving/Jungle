@@ -12,26 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
-  #  Create an class method authenticat_with_credentials
-  def self.authenticate_with_credentials(email_address, password)
-
-    # see if there is a user in the database with the given email
-    user = User.find_by_email(email_address)
-
-    # If the user exists AND the password provided is correct then return and instance of that user, if not return nil
-
-    if user && user.authenticate(password)
-      return user
-    else
-      nil
-    end
-
-  end
-
 
   private
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
   end
 
 end
