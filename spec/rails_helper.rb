@@ -17,6 +17,8 @@ require "capybara/poltergeist" # Add this line to require poltergeist
 # that JS driver to :poltergeist
 Capybara.javascript_driver = :poltergeist
 
+Capybara.default_max_wait_time = 10
+
 
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
