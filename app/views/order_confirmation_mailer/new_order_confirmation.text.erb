@@ -3,8 +3,9 @@
 Thank you for your order from the Jungle! 
 
 Your order contains:
-Some line items I have to figure out how to display 
-<%= @line_items %>
+<% @line_items.each do |li| %>
+  <%= li.product.name%>
+<% end %>
 
-Your total was <%= @order.total_cents %>
+Your total was $<%= @order.total_cents / 100 %>.
 
