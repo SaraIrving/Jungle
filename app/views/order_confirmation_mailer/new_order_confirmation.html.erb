@@ -5,9 +5,10 @@
 </h3>
 <p>Your order contains: 
   <br>
-  Some line items I have to figure out how to display
-  <br>
-  <em><%= @line_items %></em>
+  <% @line_items.each do |li| %>
+  <br><%= li.product.name%><br>
+  <% end %>
 
-  Your total was <%= @order.total_cents %>
+  <br>
+  Your total was $<%= @order.total_cents / 100 %>.
 </p>
