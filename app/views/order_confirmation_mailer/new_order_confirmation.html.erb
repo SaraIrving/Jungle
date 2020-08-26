@@ -1,5 +1,13 @@
-<h1>OrderConfirmationMailer#new_order_confirmation</h1>
 
-<p>
-  <%= @greeting %>, find me in app/views/order_confirmation_mailer/new_order_confirmation.html.erb
+
+<h3>
+ Thank you for your order from the Jungle! 
+</h3>
+<p>Your order contains: 
+  <br>
+  Some line items I have to figure out how to display
+  <br>
+  <em><%= @line_items %></em>
+
+  Your total was <%= @order.total_cents %>
 </p>

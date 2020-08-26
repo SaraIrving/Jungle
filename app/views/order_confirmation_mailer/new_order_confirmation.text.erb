@@ -1,3 +1,10 @@
-OrderConfirmationMailer#new_order_confirmation
 
-<%= @greeting %>, find me in app/views/order_confirmation_mailer/new_order_confirmation.text.erb
+
+Thank you for your order from the Jungle! 
+
+Your order contains:
+Some line items I have to figure out how to display 
+<%= @line_items %>
+
+Your total was <%= @order.total_cents %>
+
